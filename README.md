@@ -79,7 +79,7 @@ Once deployed and configured:
   Fivetran’s **Test Connection** calls the function with `setup_test = true`. In this mode, the function performs a minimal API request to Plausible (requesting one row) to confirm credentials and endpoint availability.
 
 - **Local Testing**  
-  You can also run the function locally with the [Functions Framework](https://cloud.google.com/functions/docs/running/function-framework):
+  You can also run the function locally with the [Functions Framework](https://github.com/GoogleCloudPlatform/functions-framework-nodejs):
   ```bash
   npm install
   npx functions-framework --target=syncWithPlausible --port=8080
