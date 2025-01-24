@@ -136,6 +136,6 @@
     "start": "npx functions-framework --target=syncWithPlausible --signature-type=http"
   },
   "author": "Sascha Schwabbauer",
-  "license": "ISC",
-  "description": ""
+  "license": "MIT",
+  "description": "A Google Cloud Function that fetches analytics data from Plausible and streams it into Fivetran."
 }
