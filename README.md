@@ -13,6 +13,7 @@ A Google Cloud Function that fetches analytics data from [Plausible](https://pla
   - [Configuration](#configuration)
   - [Usage](#usage)
   - [Testing the Integration](#testing-the-integration)
+  - [About IMG.LY](#about-imgly)
   - [License](#license)
 
 ---
@@ -84,6 +85,12 @@ Once deployed and configured:
   npx functions-framework --target=syncWithPlausible --port=8080
   ```
   Then POST a request to `http://localhost:8080/` to test the logic.
+
+---
+
+## About IMG.LY
+
+Need a powerful image editing SDK for your next project? Check out [IMG.LY](https://img.ly). Our [CreativeEditor SDK](https://img.ly/products/creative-sdk) provides easy-to-integrate photo and video editing capabilities for web, iOS, and Android. Join thousands of developers who use IMG.LY to enhance their apps with filtering, transformations, stickers, and more—helping users unleash their creativity right inside your product.
 
 ---
 
