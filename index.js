@@ -174,7 +174,7 @@ functions.http("syncWithPlausible", async (req, res) => {
     );
 
     // 7) Transform Plausible results into a row-based structure for Fivetran.
-    //    We'll create "plausible_timeseries" rows, each with:
+    //    We'll create "timeseries" rows, each with:
     //      - timestamp
     //      - visitors
     //      - pageviews
@@ -225,16 +225,16 @@ functions.http("syncWithPlausible", async (req, res) => {
 
     // 9) Build the Fivetran output payload:
     //    - state: updated incremental state
-    //    - insert: table data (plausible_timeseries)
+    //    - insert: table data (timeseries)
     //    - schema: define primary key(s) for the table
     //    - hasMore: indicates if Fivetran should call again
     const output = {
       state: newState,
       insert: {
-        plausible_timeseries: rows,
+        timeseries: rows,
       },
       schema: {
-        plausible_timeseries: {
+        timeseries: {
           primary_key: ["timestamp"],
         },
       },
